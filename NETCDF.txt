@@ -1,0 +1,44 @@
+NetCDF notes: EDS220 notes! 
+
+Dimensions: lat and longitude! 
+Time and date!!
+- time indicates when measurement happened when can ecocide it as dates
+- pairs of lat and long values indicate position of weather stations 
+
+30N 60E and measured at every 10degree north and every 10 easthg
+
+Variables: air temperature, represented as a 5 x 5 x 3 array with constant values for each day
+
+attributes: CRS, F or C, station ID
+
+Col: longitude
+Row: latitude 
+
+
+Adding anew variable: average temp data 
+variables: temperature and average temperature. Temp data stays same can represent average temp as a single 5x5 array with value 1 at each cell 
+attribues: 
+dimensions: time will change, cut off averaging across times to get a single value (shorten), still has 3 dimensions time lat and long 
+- temp variable using all three temp
+
+- Variables in same dataset my have all some uno dimensions in common 
+- Datasets dimensions are union of dimensions of all variables in the data set 
+- can add a fourth dimensions such as elevetion (lat,long,elevation,tiem) 
+- temp variable uses all 3 dimensions adn average temp variable only uses two 
+
+attributes: 
+- keep all previous attribtues and add attribtues forr our new average temp variable 
+
+Coordiantes: 
+- variables-  N dimensional arrays of numbers, what is measured? varying measured dependent quanitites? 
+    - we measure temp 
+
+- dimensions- desrib the axes of the arrays, with respect to what are we measuring variable., csontant/fixed.independent quantities at which we measure the variable (we temp with respect to time lat and longm 
+
+- coordinates: coord depend ond imensiosn buta re separate eat dimensions has a set of coordinates, coordinate sindicate dimensions values , at which points in dimensiosn are we measuring the variable 
+    - measure temp variable at 60,70 degrres along longtideud dimension 
+    
+    
+
+
+
